@@ -89,10 +89,17 @@ export const Login = () => {
   return (
     <div>
       <Header/>
-      <div className='absolute'>
-        <img className='brightness-50' src={login_bg_img} alt="bg" />
+      <div className="absolute w-full h-full">
+          <img
+            className="hidden lg:block w-full h-full object-cover brightness-50"
+            src={login_bg_img}
+            alt="bg"
+          />
+
+          <div className="block lg:hidden w-full h-full bg-black"></div>
       </div>
-      <form onSubmit={(e)=>e.preventDefault()} className='m-30 w-110 p-15 mx-auto right-0 left-0 absolute bg-black/65 text-white '>
+      <form onSubmit={(e)=>e.preventDefault()} className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+             bg-black/70 text-white px-6 py-10 w-[90%] sm:w-[400px] md:w-[450px] lg:w-110 rounded-md shadow-lg">
         <h1 className='font-bold text-3xl pb-6 '>{isSIgnin?"Sign In":"Sign Up"}</h1>
         <p className='text-red-500'>{errorMessage||nameError}</p>
         {!isSIgnin&&<input ref={Fullname} type="text" placeholder='Full Name' className='p-4 mb-2 mt-2 border-1 border-gray-500 w-full rounded-sm' />}

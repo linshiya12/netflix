@@ -1,4 +1,3 @@
-import React from 'react'
 import { options } from '../utils/constant'
 import { url } from '../utils/constant'
 import { useDispatch } from 'react-redux'
@@ -10,7 +9,6 @@ const useNowplayingMovies = () => {
     const getNowplayingMovies=async ()=>{
       const data=await fetch(url,options)
       const json=await data.json()
-      console.log(json.results)
       dispatch(addNowPlayingMovies(json.results))
     }
   

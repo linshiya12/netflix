@@ -45,7 +45,7 @@ If you are developing a production application, we recommend using TypeScript an
 -fetch data for trailer video
 -update state with trailor video
 -embeded the ytube video and makeit autoplay and mute
-
+-build secondary component
 
 
 **features**

@@ -11,3 +11,7 @@ export const options = {
 
 export const trailor_url1="https://api.themoviedb.org/3/movie/"
 export const trailor_url2="/videos?language=en-US"
+export const img_urlpath="http://image.tmdb.org/t/p/w300"
+export const Trendyurl="https://api.themoviedb.org/3/trending/movie/day?"
+export const Upcomurl="https://api.themoviedb.org/3/movie/upcoming?page=1"
+export const PopularUrl="https://api.themoviedb.org/3/movie/popular?page=1"

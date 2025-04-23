@@ -3,7 +3,7 @@ import useMovietrailer from "../hooks/useMovietrailer"
 
 const Videobackground = (id) => {
   const trailerId = useMovietrailer(id)
-  return (
+  return(
     <div className="w-screen">
         <iframe 
          className="w-screen aspect-video"
